@@ -12,6 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/core/prebuilt/bin/sysinit:system/bin/sysinit
+
+# Pure-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/core/prebuilt/etc/init.nexuscore.rc:root/init.nexuscore.rc
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/core/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
